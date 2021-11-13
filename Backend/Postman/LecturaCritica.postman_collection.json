@@ -1,0 +1,631 @@
+{
+	"info": {
+		"_postman_id": "34a43983-4bfb-4c4a-8d1f-c4da654371e1",
+		"name": "LecturaCritica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cursos",
+			"item": [
+				{
+					"name": "ConsultarCursos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/curso",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"curso"
+							]
+						},
+						"description": "Este se servicio sirve para consultar cursos"
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCursos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"grado\": \"11\",\r\n    \"grupo\": \"02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/curso",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarCursos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/curso/19",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"curso",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CambiarIdCursos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCurso\": 22,\r\n    \"grado\": \"2\",\r\n    \"grupo\": \"02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/curso",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Preguntas",
+			"item": [
+				{
+					"name": "localhost:8080/api/preguntas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/preguntas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"preguntas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/preguntas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pregunta\": \"Como se llama sebas\",\r\n    \"opcion1\": \"pedro\",\r\n    \"opcion2\": \"sebastian\",\r\n    \"opcion3\": \"juan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/preguntas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"preguntas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/preguntas/10",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/preguntas/25",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"preguntas",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/preguntas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPreguntas\": 10,\r\n    \"pregunta\": \"¿Cómo se llamaba Simon Bolivar?\",\r\n    \"opcion1\": \"pedro\",\r\n    \"opcion2\": \"sebastian\",\r\n    \"opcion3\": \"juan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/preguntas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"preguntas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roll",
+			"item": [
+				{
+					"name": "localhost:8080/api/roll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/roll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/roll",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"descripcion\": \"MADRE\",\r\n     \"nombreRoll\": \"Soraya\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/roll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/roll",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"idRoll\": 27,\r\n     \"descripcion\": \"Gestiona el ingreso\",\r\n     \"nombreRoll\": \"mi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/roll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/roll/10",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/roll/29",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roll",
+								"29"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Intentos",
+			"item": [
+				{
+					"name": "localhost:8080/api/intentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/intentos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"intentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/intentos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": \"2\",\r\n    \"fecha\": \"30/03/2021\",\r\n    \"hora\": \"9:37:45\",\r\n    \"pregunta1\": \"Aqui colocaría la pregunta 1\",\r\n    \"pregunta2 \": \"Aqui colocaría la pregunta 2\",\r\n    \"pregunta3\": \"Aqui colocaría la pregunta 3\",\r\n    \"pregunta4\": \"Aqui colocaría la pregunta 4\",\r\n    \"pregunta5\": \"Aqui colocaría la pregunta 5\",\r\n    \"pregunta6\": \"Aqui colocaría la pregunta 6\",\r\n    \"pregunta7\": \"Aqui colocaría la pregunta 7\",\r\n    \"pregunta8\": \"Aqui colocaría la pregunta 8\",\r\n    \"pregunta9\": \"Aqui colocaría la pregunta 9\",\r\n    \"pregunta10\": \"Aqui colocaría la pregunta 10\",\r\n    \"respuesta1\": \"opcion_1\",\r\n    \"respuesta2\": \"opcion_2\",\r\n    \"respuesta3\": \"opcion_3\",\r\n    \"respuesta4\": \"opcion_4\",\r\n    \"respuesta5\": \"opcion_5\",\r\n    \"respuesta6\": \"opcion_6\",\r\n    \"respuesta7\": \"opcion_7\",\r\n    \"respuesta8\": \"opcion_8\",\r\n    \"respuesta9\": \"opcion_9\",\r\n    \"respuesta10\": \"opcion_10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/intentos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"intentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/intentos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idIntentos\": 30,\r\n    \"idUsuario\": \"5\",\r\n    \"fecha\": \"19/10/2022\",\r\n    \"hora\": \"9:37:45\",\r\n    \"pregunta1\": \"Aqui colocaría la pregunta 1\",\r\n    \"pregunta2 \": \"Aqui colocaría la pregunta 2\",\r\n    \"pregunta3\": \"Aqui colocaría la pregunta 3\",\r\n    \"pregunta4\": \"Aqui colocaría la pregunta 4\",\r\n    \"pregunta5\": \"Aqui colocaría la pregunta 5\",\r\n    \"pregunta6\": \"Aqui colocaría la pregunta 6\",\r\n    \"pregunta7\": \"Aqui colocaría la pregunta 7\",\r\n    \"pregunta8\": \"Aqui colocaría la pregunta 8\",\r\n    \"pregunta9\": \"Aqui colocaría la pregunta 9\",\r\n    \"pregunta10\": \"Aqui colocaría la pregunta 10\",\r\n    \"respuesta1\": \"opcion_1\",\r\n    \"respuesta2\": \"opcion_2\",\r\n    \"respuesta3\": \"opcion_3\",\r\n    \"respuesta4\": \"opcion_4\",\r\n    \"respuesta5\": \"opcion_5\",\r\n    \"respuesta6\": \"opcion_6\",\r\n    \"respuesta7\": \"opcion_7\",\r\n    \"respuesta8\": \"opcion_8\",\r\n    \"respuesta9\": \"opcion_9\",\r\n    \"respuesta10\": \"opcion_10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/intentos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"intentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/intentos/14",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/intentos/31",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"intentos",
+								"31"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profesores",
+			"item": [
+				{
+					"name": "localhost:8080/api/profesores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/profesores",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profesores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/profesores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"soraya\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/profesores",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profesores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/profesores/16",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/profesores/34",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profesores",
+								"34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/profesores",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProfesor\":17,\r\n    \"nombre\": \"javier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/profesores",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profesores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ParametrosConfig",
+			"item": [
+				{
+					"name": "localhost:8080/api/parametrosconfig",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/parametrosconfig",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parametrosconfig"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/parametrosconfig",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"ayuda\",\r\n    \"valor\": \"importante\",\r\n    \"descripcion\": \"ayuda de sistema\",\r\n    \"estado\": \"apagado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/parametrosconfig",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parametrosconfig"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/parametrosconfig/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/parametrosconfig/39",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parametrosconfig",
+								"39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/parametrosconfig",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idParrametros\": 36,\r\n    \"nombre\": \"Ayuda\",\r\n    \"valor\": \"suave\",\r\n    \"descripcion\": \"ayuda de sebas\",\r\n    \"estado\": \"apagado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/parametrosconfig",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"parametrosconfig"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
